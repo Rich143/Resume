@@ -1,0 +1,45 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsectiontwocolor{Personal}{Projects}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Quadcopter Flight Controller} % Job title
+    {} % Organization
+    {} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Designed, assembled, and developed software for board to stabilize the flight of a quadcopter}
+        \item {Used Altium Designer to create schematics and PCB layout of board which included an ARM-Cortex M4 processor, and multiple MEMS IMU sensors}
+        \item {Hand soldered board and performed multiple software and hardware tests to ensure full functionality}
+        \item {Developed control software, running on FreeRTOS, to stabilize flight of quadcopter by controlling motor speeds based on sensor input}
+        \item {Implemented asynchronous reading of sensors over I2C using DMA with the resultant performance increase allowing faster control loop frequency}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Waterloo Formula Electric} % Organization
+    {Data Aquisition Unit} % Job title
+    {} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Developed firmware for onboard Data Acquisition Unit (DAU) running FreeRTOS}
+        \item {Programmed DAU to log data from multiple analog sensors and GPS location to SD Card}
+        \item {Developed SD card driver to initialize, read and write data over the SD card SPI interface}
+        \item {Synchronized multiple tasks to read from sensors at varying frequencies and log output to SD Card}
+      \end{cvitems}
+    }
+
+
+%---------------------------------------------------------
+\end{cventries}
