@@ -222,3 +222,6 @@ TSWLatexianTemp*
 # Vim temp files
 *.sw?
 *~
+
+#ctags
+tags

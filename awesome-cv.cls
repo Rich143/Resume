@@ -380,8 +380,8 @@
 \newcommand{\acvHeaderAfterQuoteSkip}{5mm}
 
 % Others
-\newcommand{\acvSectionTopSkip}{2.7mm}
-\newcommand{\acvSectionContentTopSkip}{2.5mm}
+\newcommand{\acvSectionTopSkip}{2.4mm}
+\newcommand{\acvSectionContentTopSkip}{2.2mm}
 
 
 %-------------------------------------------------------------------------------
@@ -574,6 +574,7 @@
   \begin{center}
 }{%
   \end{center}
+  \vspace{-3mm}
 }
 % Define an entry of cv information
 % Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
@@ -598,6 +599,15 @@
       {\entrytitlestyle{#1} & \entrydatestyle{#4} \\}
       {\entrytitlestyle{#2} & \entrylocationstyle{#4} \\
       \entrypositionstyle{#1} & \entrydatestyle{#3} \\}
+    \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
+  \end{tabular*}%
+}
+\newcommand*{\cventrythree}[5]{%
+  \vspace{-2.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+      \entrypositionstyle{#2} & \entrylocationstyle{#4} \\
     \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
   \end{tabular*}%
 }
@@ -681,7 +691,8 @@
 
 \newenvironment{skillItem}
 {\begin{itemize}[labelindent=1ex,labelsep=1mm,leftmargin=*]}
-{\end{itemize}}
+{\end{itemize}
+ \vspace{-2.5mm}}
 
 % Define a line of cv information(skill)
 % Usage: \cvskillcol{col1}{col2}{col3}

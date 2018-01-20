@@ -19,26 +19,38 @@
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {Designed, assembled, and developed software for board to stabilize the flight of a quadcopter}
         \item {Used Altium Designer to create schematics and PCB layout of board which included an ARM-Cortex M4 processor and multiple MEMS IMU sensors}
-        %\item {Hand soldered board and performed multiple software and hardware tests to ensure full functionality}
         \item {Developed control software, using FreeRTOS, to stabilize quadcopter flight by controlling motor speeds based on sensor input}
-        %\item {Implemented sensor fusion algorithm to combine multiple sensor inputs and cascaded PID control to perform quadcopter auto levelling}
         \item {Implemented sensor fusion algorithm to combine sensor inputs and cascaded PID control to perform quadcopter auto levelling}
-        \item {Implemented asynchronous reading of sensors over I2C using DMA with the resultant performance increase allowing faster control loop frequency}
+        \item {Developed asynchronous reading of sensors over I2C using DMA reducing CPU load and allowing faster control loop frequency}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
   \cventrytwo
-    {Data Aquisition Unit} % Job title
+    {2018 Vehicle Firmware Design} % Organization
     {Firmware Subteam Lead, Waterloo Formula Electric} % Organization
+    {} % Location
+    {January 2018 - Present} % Date(s)
+    {
+      \begin{cvitems}
+        %\item {Responsible for design and implementation of firmware for 2018 vehicle}
+        \item {Created state machines documenting desired behaviour of all vehicle ECUs}
+        \item {Integrated into build system a python code generation script to create functions for defect tracking code transmission over CAN}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventrythree
+    {}
+    {Data Aquisition Unit} % Job title
     {} % Location
     {January 2017 - April 2017} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed firmware for onboard Data Acquisition Unit (DAU) running FreeRTOS}
-        \item {Programmed DAU to log data from multiple analog sensors and GPS location to SD card}
+        \item {Developed firmware for onboard Data Acquisition Unit (DAU) running FreeRTOS, which logged data from analog and digital sensors}
         \item {Developed SD card driver to initialize, read and write data over the SD card SPI interface}
         \item {Synchronized multiple tasks to read from sensors at varying frequencies and log output to SD card}
+        %\item {Programmed DAU to log data from multiple analog sensors and GPS location to SD card}
       \end{cvitems}
     }
 
