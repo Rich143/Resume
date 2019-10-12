@@ -10,35 +10,40 @@
 \begin{cventries}
 %---------------------------------------------------------
   \cventrytwo
-    {Firmware Lead, 2018 Vehicle Firmware} % Organization
+    {Firmware Lead, 2019 Vehicle Firmware} % Organization
     {Waterloo Formula Electric} % Organization
     {} % Location
     {January 2017 - Present} % Date(s)
     {
       \begin{cvitems}
+        \item {Developed firmware for vehicle ECUs managing low and high voltage batteries, and controlling motors}
+        \item {Implemented Battery Monitoring System (BMS) ensuring cell voltages and temperatures remain within safe limits}
+        \item {Developped balance charging algorithm safely coordinating charging using HV charger and BMS}
+        \item {Implemented driver for LTC6811 battery monitor chip, communicating over Isolated SPI bus}
+        \item {Created python script to generate C code for sending and receiving CAN messages based on message and defect code database}
         %\item {Responsible for design and implementation of firmware for 2018 vehicle}
         %\item {Created state machines documenting desired behaviour of all vehicle electrical control units (ECUs)}
         %\item {Integrated into build system a python code generation script to create functions for defect tracking code transmission over CAN}
-        \item {Developed firmware for vehicle boards which managed low and high voltage batteries, and controlled motors}
-        \item {Created python script to generate C code for sending and receiving CAN messages based on message and defect code database}
-        \item {Implemented CAN driver with interrupt driven message transmit/receive and abstraction layer to support multiple processors}
+        %\item {Developed firmware for vehicle boards which managed low and high voltage batteries, and controlled motors}
+        %\item {Created python script to generate C code for sending and receiving CAN messages based on message and defect code database}
+        %\item {Implemented CAN driver with interrupt driven message transmit/receive and abstraction layer to support multiple processors}
         %\item {Developed vehicle control unit state machine, controlling motors based on driver input and data from battery management system}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
-  \cventrythree
-    {}
-    {Data Acquisition Unit} % Job title
-    {} % Location
-    {January 2017 - April 2017} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Developed firmware for onboard Data Acquisition Unit (DAU) running FreeRTOS, which logged data from analog and digital sensors}
-        \item {Synchronized multiple tasks to read from sensors at varying frequencies and implemented SD card driver to allow logging data}
-        %\item {Programmed DAU to log data from multiple analog sensors and GPS location to SD card}
-      \end{cvitems}
-    }
+  %\cventrythree
+    %{}
+    %{Data Acquisition Unit} % Job title
+    %{} % Location
+    %{January 2017 - April 2017} % Date(s)
+    %{
+      %\begin{cvitems} % Description(s) of tasks/responsibilities
+        %\item {Developed firmware for onboard Data Acquisition Unit (DAU) running FreeRTOS, which logged data from analog and digital sensors}
+        %\item {Synchronized multiple tasks to read from sensors at varying frequencies and implemented SD card driver to allow logging data}
+        %%\item {Programmed DAU to log data from multiple analog sensors and GPS location to SD card}
+      %\end{cvitems}
+    %}
 
 %---------------------------------------------------------
   \cventry
