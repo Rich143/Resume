@@ -18,14 +18,11 @@
     {}
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Created test automation framework for EFI display driver code, and implemented tests to verify display setup}
-        \item {Modified EFI display driver code to intelligently determine failure causes and save information for use in testing}
-        \item {Created tests that will prevent numerous common bugs that are occurring with increasing frequency}
-        \item {Implemented saving of debug data relating to EFI display setup for devices in field}
-        \item {Saved data adds visibility for debugging issues similar to past field failures}
-        %\item {Together, tests and debug data add framework for greatly improving EFI development where none existed previously}
-        %\item {Major display bug causing recall would have been prevented or mitigated in future due to new tests and debug data}
-        \item {Developed tool for storing GPU information in Serial EEPROM during manufacturing}
+        \item {Added support to camera driver for synchronizing white balance and exposure between multiple cameras}
+        \item {Improved ADAS algorithm api by automatically handling buffer management for algorithms with multiple sensor inputs}
+        \item {Developed driver to provide h264 encoded stream from IP camera by modifying the multimedia graph}
+        \item {Responsible for debugging multiple customer issues, such as identifying bug in sensor api that reused sensor buffer headers for multiple data buffers}
+        \item {Refactored code to be safety certifiable by removing dynamic memory allocation during runtime and replacing it with static buffer array}
       \end{cvitems}
     }
 
@@ -40,12 +37,12 @@
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {Created test automation framework for EFI display driver code, and implemented tests to verify display setup}
         \item {Modified EFI display driver code to intelligently determine failure causes and save information for use in testing}
-        \item {Created tests that will prevent numerous common bugs that are occurring with increasing frequency}
+        \item {Created tests that will prevent numerous common bugs that were occurring with increasing frequency}
         \item {Implemented saving of debug data relating to EFI display setup for devices in field}
-        \item {Saved data adds visibility for debugging issues similar to past field failures}
+        %\item {Saved data adds visibility for debugging issues similar to past field failures}
         %\item {Together, tests and debug data add framework for greatly improving EFI development where none existed previously}
         %\item {Major display bug causing recall would have been prevented or mitigated in future due to new tests and debug data}
-        \item {Developed tool for storing GPU information in Serial EEPROM during manufacturing}
+        %\item {Developed tool for storing GPU information in Serial EEPROM during manufacturing}
       \end{cvitems}
     }
 
@@ -63,12 +60,18 @@
         \item {Implemented communication API for product simulator using interprocess shared memory between Linux daemon and QEMU VM}
         %\item {Implemented communication API for product simulator between QEMU VM and linux daemon using interprocess shared memory}
         \item {Shared memory communication decreased message transfer time by 75\% vs old communication API}
-        \item {Developed unified API for communication between main processor and FPGAs}
-        \item {New API replaced numerous redundant functions with one interface to access all FPGA memory regions}
+        \item {Developed unified API for communication between main processor and FPGAs, replacing numerous redundant functions}
+        %\item {New API replaced numerous redundant functions with one interface to access all FPGA memory regions}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
+  %\cventryOneLine
+    %{Lumotune} % Organization
+    %{Hardware Design Intern} % Job title
+    %%{Waterloo, Ontario} % Location
+    %{January 2017 - April 2017} % Date(s)
+
   \cventry
     {Lumotune} % Organization
     {Hardware Design Intern} % Job title
@@ -83,8 +86,8 @@
         %\item {Developed circuitry to automatically discharge capacitors, increasing board reliability}
         %\item {Implemented voltage quadrupler circuit to generate high voltage DC from AC input}
         %\item {Performed circuit simulation in LTSPICE to model the new circuitry described above}
-        \item {Modelled all new circuitry in LTSPICE circuit simulator to verify and optimize designs}
-        \item {Debugged switching voltage regulator with high output ripple by reworking board to test out multiple types of output filters}
+        %\item {Modelled all new circuitry in LTSPICE circuit simulator to verify and optimize designs}
+        %\item {Debugged switching voltage regulator with high output ripple by reworking board to test out multiple types of output filters}
       \end{cvitems}
     }
 
@@ -118,11 +121,11 @@
     %}
 
 %---------------------------------------------------------
-  \cventryOneLine
-    {Software Tester,} % Job title
-    {Alcatel-Lucent} % Organization
-    %{Ottawa, Ontario} % Location
-    {January 2015 - April 2015} % Date(s)
+  %\cventryOneLine
+    %{Software Tester,} % Job title
+    %{Alcatel-Lucent} % Organization
+    %%{Ottawa, Ontario} % Location
+    %{January 2015 - April 2015} % Date(s)
     %{
       %\begin{cvitems} % Description(s) of tasks/responsibilities
         %%\item {Developed and modified TCL scripts to automate testing of CLI commands}
