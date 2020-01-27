@@ -19,10 +19,12 @@
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {Added support to camera driver for synchronizing white balance and exposure between multiple cameras}
-        \item {Improved ADAS algorithm api by automatically handling buffer management for algorithms with multiple sensor inputs}
-        \item {Developed driver to provide h264 encoded stream from IP camera by modifying the multimedia graph}
-        \item {Responsible for debugging multiple customer issues, such as identifying bug in sensor api that reused sensor buffer headers for multiple data buffers}
-        \item {Refactored code to be safety certifiable by removing dynamic memory allocation during runtime and replacing it with static buffer array}
+        \item {Improved ADAS algorithm API by automatically handling buffer management for algorithms with multiple sensor inputs}
+        \item {Developed driver to provide MP4 encoded stream from IP camera}
+          % by modifying the multimedia graph
+        \item {Debugged customer issues, for example identifying bug in sensor API where buffer headers were reused for multiple data buffers}
+        \item {Improved code to meet safety certification ISO 26262}
+        %\item {Improved code to be safety certifiable by replacing dynamic memory allocation during runtime with static buffer arrays}
       \end{cvitems}
     }
 
@@ -35,10 +37,14 @@
     {}
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Created test automation framework for EFI display driver code, and implemented tests to verify display setup}
+        \item {Took lead on creating test automation framework for EFI display driver code}
+        \item {Designed automatic tests to catch and identify the cause of increasingly common errors due to incorrect display setup}
         \item {Modified EFI display driver code to intelligently determine failure causes and save information for use in testing}
-        \item {Created tests that will prevent numerous common bugs that were occurring with increasing frequency}
-        \item {Implemented saving of debug data relating to EFI display setup for devices in field}
+        \item {Implemented saving of EFI display debug data in customer devices in order to aid debugging of failures occurring in the field}
+        %\item {Created test automation framework for EFI display driver code, and implemented tests to verify display setup}
+        %\item {Modified EFI display driver code to intelligently determine failure causes and save information for use in testing}
+        %\item {Created tests that will prevent numerous common bugs that were occurring with increasing frequency}
+        %\item {Implemented saving of debug data relating to EFI display setup for devices in field}
         %\item {Saved data adds visibility for debugging issues similar to past field failures}
         %\item {Together, tests and debug data add framework for greatly improving EFI development where none existed previously}
         %\item {Major display bug causing recall would have been prevented or mitigated in future due to new tests and debug data}
@@ -60,7 +66,7 @@
         \item {Implemented communication API for product simulator using interprocess shared memory between Linux daemon and QEMU VM}
         %\item {Implemented communication API for product simulator between QEMU VM and linux daemon using interprocess shared memory}
         \item {Shared memory communication decreased message transfer time by 75\% vs old communication API}
-        \item {Developed unified API for communication between main processor and FPGAs, replacing numerous redundant functions}
+        %\item {Developed unified API for communication between main processor and FPGAs, replacing numerous redundant functions}
         %\item {New API replaced numerous redundant functions with one interface to access all FPGA memory regions}
       \end{cvitems}
     }
